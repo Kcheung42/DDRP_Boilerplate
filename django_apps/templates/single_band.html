@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load render_bundle from webpack_loader %}
+
+{% block head_title %}
+Single_Band
+{% endblock head_title %}
+
+{% block body %}
+<div id="react-root"></div>
+    <h1>Hello World from django single_band.html</h1>
+{% render_bundle 'single_band' %}
+{% endblock body %}
+
+{% block javascript %}
+{% render_bundle 'single_band' %}
+{% endblock javascript %}
