@@ -1,10 +1,5 @@
 FROM python:3.5
 
-ENV PYTHONUNBUFFERED 1
-ENV DJANGO_SU_NAME=admin
-ENV DJANGO_SU_EMAIL=admin@my.company
-ENV DJANGO_SU_PASSWORD=admin
-
 # Setup Debian linux
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install build-essential curl
