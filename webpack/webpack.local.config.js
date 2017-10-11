@@ -11,20 +11,6 @@ config.entry = {
     'react-hot-loader/patch',
     path.join(__dirname, '../static/js/src/main/index')
   ]
-	,
-  all_bands: [
-    'webpack-dev-server/client?http://0.0.0.0:3000',
-    'webpack/hot/only-dev-server',
-    'react-hot-loader/patch',
-    path.join(__dirname, '../static/js/src/main/all_bands')
-  ]
-	,
-  single_band: [
-    'webpack-dev-server/client?http://0.0.0.0:3000',
-    'webpack/hot/only-dev-server',
-    'react-hot-loader/patch',
-    path.join(__dirname, '../static/js/src/main/single_band')
-  ]
 };
 
 config.devtool = 'inline-sourcemap';

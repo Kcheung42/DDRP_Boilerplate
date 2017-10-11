@@ -62,7 +62,6 @@ DJANGO_APPS = [
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'musicapp.apps.MusicappConfig'
 ]
 
 THIRD_PARTY_APPS = [
@@ -76,7 +75,7 @@ THIRD_PARTY_APPS = [
     'corsheaders',
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = ['musicapp.apps.MusicappConfig',]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
