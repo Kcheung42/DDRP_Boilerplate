@@ -1,6 +1,9 @@
 FROM python:3.5
 
 ENV PYTHONUNBUFFERED 1
+ENV DJANGO_SU_NAME=admin
+ENV DJANGO_SU_EMAIL=admin@my.company
+ENV DJANGO_SU_PASSWORD=admin
 
 # Setup Debian linux
 RUN export DEBIAN_FRONTEND=noninteractive
@@ -17,7 +20,6 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install -r /requirements/local.txt && npm install && npm run build-development
-
 COPY ./docker_compose/django/development/start.sh /start.sh
 COPY ./docker_compose/django/entrypoint.sh /entrypoint.sh
 RUN sed -i 's/\r//' /entrypoint.sh \
