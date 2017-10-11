@@ -5,10 +5,11 @@ export class ItemLister extends React.Component {
 	constructor() {
 		super();
 		this.state={items:[]};  
-		this.setState()
 	}
 	componentDidMount() {
-		fetch('http://127.0.0.1:8000/music/api/1.json')
+		fetch('http://127.0.0.1:8000/music/api/1.json',{
+			credentials: 'include'
+		})
 		.then((resp)=> resp.json())
 		.then(newItem => this.setState((prevState, props) => {
 				console.log(newItem);
