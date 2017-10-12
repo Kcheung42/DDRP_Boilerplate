@@ -6,7 +6,7 @@ export class ItemLister extends React.Component {
 		this.state={items:[]};  
 	}
 	componentDidMount() {
-		fetch('http://127.0.0.1:8000/music/api/1.json',{
+		fetch('http://127.0.0.1:8000/rental/api/35.json',{
 			credentials: 'include'
 		})
 		.then((resp)=> resp.json())

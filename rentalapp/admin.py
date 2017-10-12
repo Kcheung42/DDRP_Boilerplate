@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Band
+from .models import Item
 # Register your models here.
 
-class BandAdmin(admin.ModelAdmin):
+class ItemAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ['name']
 
-admin.site.register(Band, BandAdmin)
+admin.site.register(Item, ItemAdmin)
 

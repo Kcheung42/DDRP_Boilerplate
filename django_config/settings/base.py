@@ -75,7 +75,7 @@ THIRD_PARTY_APPS = [
     'corsheaders',
 ]
 
-LOCAL_APPS = ['musicapp.apps.MusicappConfig',]
+LOCAL_APPS = ['rentalapp.apps.MusicappConfig',]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
