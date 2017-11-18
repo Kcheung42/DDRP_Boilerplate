@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^api-token-verify/', verify_jwt_token),
 
     # our urls
-    url(r'^rental/', include('rentalapp.urls'), name='item'),
+    # url(r'^rental/', include('rentalapp.urls'), name='item'),
 ]
 
 if settings.DEBUG:
