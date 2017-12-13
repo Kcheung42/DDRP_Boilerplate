@@ -10,26 +10,28 @@
 
 1. Create .env file
  
-### Here's a Sample
-##### SECRET_KEY='#_r+1boq=zxhknws&0-8l)fi77tp#%if+ii%$ek6h86_iv3q%&'
-##### DEBUG=true
-##### DJANGO_SETTINGS_MODULE=django_config.settings.local
-##### ALLOWED_HOSTS= 127.0.0.1 0.0.0.0
-##### DATABASE_URL=postgres://django:1234@postgres:5432/boilerplate
-##### DJANGO_ADMIN_URL=^admin/
-##### 
-##### MAILGUN_API_KEY=[mailgun-api-key]
-##### MAILGUN_DEFAULT_FROM_EMAIL=[email]
-##### 
-##### 
-##### POSTGRES_PASSWORD=1234
-##### POSTGRES_USER=django
-##### POSTGRES_DB=boilerplate
-##### 
-##### EMAIL_PORT=1025
-##### EMAIL_HOST=localhost
-##### EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
-##### DEFAULT_FROM_EMAIL=kcheung331@gmail.com
+###### Here's a Sample
+```
+ SECRET_KEY='#_r+1boq=zxhknws&0-8l)fi77tp#%if+ii%$ek6h86_iv3q%&'
+ DEBUG=true
+ DJANGO_SETTINGS_MODULE=django_config.settings.local
+ ALLOWED_HOSTS= 127.0.0.1 0.0.0.0
+ DATABASE_URL=postgres://django:1234@postgres:5432/boilerplate
+ DJANGO_ADMIN_URL=^admin/
+ 
+ MAILGUN_API_KEY=[mailgun-api-key]
+ MAILGUN_DEFAULT_FROM_EMAIL=[email]
+ 
+ 
+ POSTGRES_PASSWORD=1234
+ POSTGRES_USER=django
+ POSTGRES_DB=boilerplate
+ 
+ EMAIL_PORT=1025
+ EMAIL_HOST=localhost
+ EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+ DEFAULT_FROM_EMAIL=admin@gmail.com
+```
 
 2. npm install
 3. make docker-build-dev
@@ -48,6 +50,10 @@ Javascript has versions named ECMAScript (ES). Allows us to have a clean, mainta
 2. Use the same codebase for iOS and Android (with React Native)
 3. Manage complicated state more easily
 4. React is Backend Agnostic
+
+Boilerplate adapted from:
+
+https://gist.github.com/genomics-geek/98929a9e7ba9602fed7bfa4a5a1c5c4e#file-step08-md
 
 
 
