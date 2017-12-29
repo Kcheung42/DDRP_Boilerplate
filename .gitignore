@@ -27,3 +27,7 @@ db.sqlite3
 
 # Apple files
 .DS_Store
+
+#swapfiles
+*.swp
+*.swo
