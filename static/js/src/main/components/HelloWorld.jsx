@@ -4,10 +4,7 @@ export class HelloWorld extends React.Component {
   render(){
     return(
         <div>
-          <div>
-            Hello World!
-          </div>
-          {this.props.children}
+          Hello {this.props.children}
         </div>
         )
   }
