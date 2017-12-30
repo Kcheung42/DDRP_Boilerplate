@@ -72,6 +72,7 @@ THIRD_PARTY_APPS = [
     'rest_auth',
     'rest_auth.registration',
     'webpack_loader',
+    'corsheaders',
 ]
 
 LOCAL_APPS = [
