@@ -12,7 +12,7 @@ config.entry = {
     'react-hot-loader/patch',
     path.join(__dirname, '../static/js/src/main/Index')
   ],
-  // vendors: ['react'],
+  vendors: ['react'],
 };
 
 config.devtool = 'inline-sourcemap';
@@ -31,7 +31,7 @@ config.plugins = [
       BASE_URL: JSON.stringify('http://0.0.0.0:8000/'),
     }
   }),
-  // new webpack.optimize.CommonChunkPlugin('vendors', 'vendors.js'), //seperates bundle files, one for react.js one for our app. Caches react library so users don't have to redownload.
+  new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'), //seperates bundle files, one for react.js one for our app. Caches react library so users don't have to redownload.
 ];
 
 config.module.loaders[0].query.plugins = ['react-hot-loader/babel'];
