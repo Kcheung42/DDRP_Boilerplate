@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var config = require('./webpack.base.config.js');
 
 config.entry = {
-  main: [
+  Index: [
     path.join(__dirname, '../static/js/src/main/index')
   ]
 };
