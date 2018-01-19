@@ -4,6 +4,7 @@
 * Docker with Docker Compose
 * Django REST APIs
 * ReactJS
+* Redux
 * Webpack module bundler and Hot Reloading (Hot Reloader 3)
 
 # Setup Local Environment
